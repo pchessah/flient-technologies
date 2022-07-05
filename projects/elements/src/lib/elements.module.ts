@@ -1,16 +1,19 @@
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { ElementsComponent } from './elements.component';
+import { RouterModule } from '@angular/router';
+import { TopNavbarComponent } from './navigation/top-navbar/top-navbar.component';
+
 
 
 
 @NgModule({
-  declarations: [
-    ElementsComponent
+  declarations: [ TopNavbarComponent
+
   ],
-  imports: [
+  imports: [  CommonModule, RouterModule
   ],
-  exports: [
-    ElementsComponent
+  exports: [ TopNavbarComponent
+
   ]
 })
 export class ElementsModule { }

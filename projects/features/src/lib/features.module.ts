@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { ElementsModule } from 'projects/elements/src';
 import { FeatureRoutingModule } from './features.router.module';
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 
@@ -8,7 +9,7 @@ import { LandingPageComponent } from './pages/landing-page/landing-page.componen
   declarations: [
     LandingPageComponent
   ],
-  imports: [ FeatureRoutingModule
+  imports: [ FeatureRoutingModule, ElementsModule
   ],
   exports: [
     LandingPageComponent

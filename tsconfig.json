@@ -5,6 +5,24 @@
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "elements": [
+        "dist/elements/elements",
+        "dist/elements"
+      ],
+      "features": [
+        "dist/features/features",
+        "dist/features"
+      ],
+      "model": [
+        "dist/model/model",
+        "dist/model"
+      ],
+      "state": [
+        "dist/state/state",
+        "dist/state"
+      ]
+    },
     "strict": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,

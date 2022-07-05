@@ -2,9 +2,8 @@ const plugin = require("tailwindcss/plugin");
 const colors = require("tailwindcss/colors");
 
 module.exports = {
-  purge: {
-    enabled: true,
     content: [
+      "./src/**/*.{html,ts}",
       "./**/*.html",
       "./*.html",
       "./**/*.js",
@@ -15,7 +14,6 @@ module.exports = {
     options: {
       safelist: [],
     },
-  },
   theme: {
     colors: {
       ...colors,
@@ -73,6 +71,17 @@ module.exports = {
       minWidth: {
         "140-px": "140px",
         48: "12rem",
+      },
+      spacing: {
+        '1': '8px',
+        '2': '12px',
+        '3': '16px',
+        '4': '24px',
+        '5': '32px',
+        '6': '48px',
+        'some key': {
+          1.5: '0.375rem'
+      }
       },
       backgroundSize: {
         full: "100%",

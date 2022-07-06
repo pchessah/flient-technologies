@@ -16,4 +16,8 @@ export class LandingPageComponent implements OnInit {
   getCloudServerImg = () => 'assets/landing-page/cloud-server.svg';
 
   getLaptopImg = () => 'assets/landing-page/laptop-icon.svg';
+
+  getInternetTechImg = () => 'assets/landing-page/internet-tech.jpg';
+
+  getWebDesignImg = () => 'assets/landing-page/web-design.svg';
 }

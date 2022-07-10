@@ -14,6 +14,10 @@
         "dist/features/features",
         "dist/features"
       ],
+      "functions": [
+        "dist/functions/functions",
+        "dist/functions"
+      ],
       "model": [
         "dist/model/model",
         "dist/model"

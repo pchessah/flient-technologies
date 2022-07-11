@@ -1,16 +1,12 @@
 import { NgModule } from '@angular/core';
-import { FunctionsComponent } from './functions.component';
-
+import { environment } from 'src/environments/environment';
+import { SendEmailService } from './email/send-email.service';
 
 
 @NgModule({
-  declarations: [
-    FunctionsComponent
-  ],
-  imports: [
-  ],
-  exports: [
-    FunctionsComponent
-  ]
+  declarations: [ ],
+  imports: [ ],
+  exports: [ ],
+  providers: [ SendEmailService, {provide: 'ENVIRONMENT', useValue: environment} ]
 })
 export class FunctionsModule { }
